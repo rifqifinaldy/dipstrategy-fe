@@ -6,10 +6,10 @@ import { ContactFormGroup } from "./contact.form";
 
 const ContactForm = () => {
   return (
-    <ContactFormGroup>
+    <ContactFormGroup data-aos="flip-down">
       <Input id="name" placeholder="Name" type="text" dark={true} />
       <Input id="email" placeholder="e-mail" type="email" dark={true} />
-      <TextArea id="message" placeholder="message" dark={true} rows={4}/>
+      <TextArea id="message" placeholder="message" dark={true} rows={4} />
       <MyButton>
         Submit <ButtonIcon />
       </MyButton>

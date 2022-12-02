@@ -16,22 +16,28 @@ const ContactSection = () => {
     <Container fluid={false} dark={false}>
       <ContactSectionWrapper>
         <ContactInfoWrapper>
-          <SectionHeading dark={false}>Get In Touch</SectionHeading>
-          <Paragraph dark={false}>
+          <SectionHeading data-aos="fade-up" dark={false}>
+            Get In Touch
+          </SectionHeading>
+          <Paragraph data-aos="fade-up" dark={false}>
             Looking to talk to us directly, or planning an office visit ? As
             Digitas Agency, Dipstrategy start by understanding your business
             need to comes up with any solutions. That&apos;s why it is important
             for us to hear your story. When it come to listening to your story,
             we are all ears.
           </Paragraph>
-          <Paragraph dark={false}>
+          <Paragraph data-aos="fade-up" dark={false}>
             Gd. TItan lt.3, Jl.Slamet Riyadi no 7, Jakarta 13150 - Indonesia
           </Paragraph>
-          <ContactInfo>P. +62 21 858 3944</ContactInfo>
-          <ContactInfo>INFO@DIPSTRATEGY.CO.ID</ContactInfo>
+          <ContactInfo data-aos="fade-up">P. +62 21 858 3944</ContactInfo>
+          <ContactInfo data-aos="fade-up">INFO@DIPSTRATEGY.CO.ID</ContactInfo>
           {socialMediaItems.map((data) => {
             return (
-              <ContactSocialMedia key={data.id} href={data.link}>
+              <ContactSocialMedia
+                data-aos="fade-up"
+                key={data.id}
+                href={data.link}
+              >
                 {data.name}
               </ContactSocialMedia>
             );

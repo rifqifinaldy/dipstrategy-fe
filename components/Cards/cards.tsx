@@ -28,13 +28,14 @@ const Cards: FC<ICard> = ({
   twitter_url,
 }) => {
   return (
-    <CardWrapper>
+    <CardWrapper data-aos="fade-up">
       {/* Image Wrapper */}
       <CardImageContainer>
         <CardImage
-          objectFit="cover"
           fill={true}
           alt="Dips Strategy Avatar"
+          priority={true}
+          sizes="100%"
           src={image}
         />
       </CardImageContainer>

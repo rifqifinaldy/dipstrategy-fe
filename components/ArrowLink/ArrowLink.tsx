@@ -14,8 +14,8 @@ interface IArrowLink {
 const ArrowLink = ({ text, dark, href }: IArrowLink) => {
   return (
     <ArrowLinkContainer>
-      <ArrowLinkText dark={dark} href={href}>{text}</ArrowLinkText>
-      <ArrowLinkIcon dark={dark} />
+      <ArrowLinkText $dark={dark.toString()} href={href}>{text}</ArrowLinkText>
+      <ArrowLinkIcon $dark={dark.toString()} />
     </ArrowLinkContainer>
   );
 };

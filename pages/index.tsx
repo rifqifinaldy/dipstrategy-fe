@@ -9,7 +9,6 @@ import WorkflowSection from "components/Sections/HomeSection/WorkflowSection/Wor
 export default function Home() {
   return (
     <div>
-      {/* Carousel Section */}
       <Carousel />
       <ServiceSection />
       <WorkflowSection />

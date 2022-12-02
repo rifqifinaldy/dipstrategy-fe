@@ -5,7 +5,6 @@ import { theme } from "styles/theme.style";
 export const Subtitle = styled.h6<{ dark: boolean }>`
   font-size: 21px;
   font-weight: ${({ theme }) => theme.font.weight.bold};
-  width: 800px;
   line-height: 120%;
   margin-bottom: 1em;
   color: ${({ theme }) => theme.colors.text.darkest};
@@ -15,4 +14,8 @@ export const Subtitle = styled.h6<{ dark: boolean }>`
   color: ${theme.colors.text.light};
   opacity: 1;
   `}
+  @media screen and (max-width: 512px) {
+    margin: 0.2em 0;
+    font-size: 16px;
+  }
 `;

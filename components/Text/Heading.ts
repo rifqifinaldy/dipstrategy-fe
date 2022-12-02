@@ -16,6 +16,16 @@ export const SectionHeading = styled.h1<{ dark: boolean }>`
   color: ${theme.colors.text.lightest};
   opacity: 1;
   `}
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 540px) {
+    font-size: 48px;
+    width: 100%;
+  }
+  @media screen and (max-width: 288px) {
+    font-size: 32px;
+  }
 `;
 
 // Basic Heading Style
@@ -31,4 +41,8 @@ export const BasicHeading = styled.h2<{ dark: boolean }>`
   color: ${theme.colors.text.lightest};
   opacity: 1;
   `}
+  @media screen and (max-width: 540px) {
+    font-size: 32px;
+    margin: 0.2em 0;
+  }
 `;

@@ -2,16 +2,17 @@ import { Divider } from "components/Divider/divider.styled";
 import { Small } from "components/Text/Paragraph";
 import { quickLinksItems } from "mockdata/quicklinks.data";
 import { socialMediaItems } from "mockdata/socialmedia.data";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
   FooterContainer,
   FooterContentWrapper,
   FooterItems,
-  FooterLogo,
   FooterPhoneNumber,
   FooterListItems,
   Copyright,
+  FooterLogoWrapper,
 } from "./footer.style";
 import FooterForm from "./Form/FooterForm";
 
@@ -19,12 +20,14 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterContentWrapper>
-        <FooterLogo
-          height={282}
-          width={144}
-          alt="DIPS-Banner-1"
-          src="/images/footer/footer-logo.png"
-        />
+        <FooterLogoWrapper>
+          <Image
+            fill={true}
+            sizes="100%"
+            alt="DIPS-Banner-1"
+            src="/images/footer/footer-logo.png"
+          />
+        </FooterLogoWrapper>
         <FooterPhoneNumber>P. +62 21 858 3944</FooterPhoneNumber>
         <FooterItems>
           <h6>Quick Links</h6>
@@ -56,7 +59,7 @@ const Footer = () => {
         </FooterItems>
       </FooterContentWrapper>
       <Copyright>
-        <Divider dark={false}/>
+        <Divider dark={false} />
         <Small align="left">
           Copyright 2022 Digital Presence Strategy - Dipstrategy - Digital
           Agency Jakarta

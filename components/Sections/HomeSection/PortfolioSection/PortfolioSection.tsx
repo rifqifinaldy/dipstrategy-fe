@@ -19,14 +19,14 @@ const PortfolioSection = () => {
   return (
     <Container fluid={false} dark={false}>
       <PortoflioHeaderWrapper>
-        <SectionHeading dark={false}>PORTFOLIO</SectionHeading>
+        <SectionHeading data-aos="fade-up" dark={false}>PORTFOLIO</SectionHeading>
         <PortfolioQuotes>
-          <Paragraph dark={false}>
+          <Paragraph data-aos="fade-up" dark={false}>
             Take a look at our most successful projects and see for yourself our
             skill and the results that speak for themselves
           </Paragraph>
         </PortfolioQuotes>
-        <NavigationArrowWrapper>
+        <NavigationArrowWrapper data-aos="fade-up">
           <RiArrowLeftLine />
           <RiArrowRightLine />
         </NavigationArrowWrapper>
@@ -34,7 +34,7 @@ const PortfolioSection = () => {
 
       {portofolioItems.map((data, i) => {
         return (
-          <PortfolioItemsWrapper key={data.id}>
+          <PortfolioItemsWrapper data-aos="fade-up" key={data.id}>
             <Column1>
               {data.id % 2 !== 0 ? (
                 <>
@@ -85,6 +85,7 @@ const PortfolioSection = () => {
                   <Image
                     height={350}
                     width={188}
+                    
                     alt={data.title}
                     src={data.images.front_image}
                   />

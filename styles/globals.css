@@ -1,3 +1,23 @@
 /* Looks like i didn't found Gujerati MT but instead im using this one just to make it more similiar */
 @import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFFE55; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1c77c3; 
+  }

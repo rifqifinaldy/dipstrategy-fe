@@ -1,45 +1,38 @@
+import Accordions from "components/Accordions/Accordions";
 import ArrowLink from "components/ArrowLink/ArrowLink";
-import { ButtonIcon, MyButton } from "components/Button/button.style";
 import { Container } from "components/Container/container.style";
 import { Divider } from "components/Divider/divider.styled";
 import { SectionHeading } from "components/Text/Heading";
-import { Paragraph } from "components/Text/Paragraph";
-import { Subtitle } from "components/Text/Subtitle";
 import { serviceItems } from "mockdata/service.data";
 import React from "react";
-import { RiAddLine } from "react-icons/ri";
-import {
-  ServiceHeader,
-  ServiceItemDescription,
-  ServiceItemWrapper,
-  ServiceQuote,
-} from "./service.section.style";
+import { ServiceHeader, ServiceQuote } from "./service.section.style";
 
 const ServiceSection = () => {
   return (
-    <Container fluid={false} dark={true}>
+    <Container
+      image="./images/background/services_background.png"
+      id="services"
+      fluid={false}
+      dark={true}
+    >
       <ServiceHeader>
-        <SectionHeading dark={true}>Our Services</SectionHeading>
-        <ServiceQuote>
+        <SectionHeading data-aos="fade-up" dark={true}>Our Services</SectionHeading>
+        <ServiceQuote data-aos="fade-up">
           We&apos;ve worked with a wide array of clients across the globe to
           apply design fundamentals of elegance, simplicity
         </ServiceQuote>
-        <ArrowLink href="/" dark={true} text="View All" />
+        <ArrowLink data-aos="fade-up" href="/" dark={true} text="View All" />
       </ServiceHeader>
       {serviceItems.map((item) => {
         return (
-          <div key={item.title}>
+          <div key={item.title} data-aos="flip-up">
             <Divider dark={true} />
-            <ServiceItemWrapper>
-              <Subtitle dark={true}>{item.title}</Subtitle>
-              <ServiceItemDescription>
-                <Paragraph dark={true}>{item.description}</Paragraph>
-              </ServiceItemDescription>
-              <MyButton>
-                Learn More <ButtonIcon />
-              </MyButton>
-              <RiAddLine />
-            </ServiceItemWrapper>
+            <Accordions
+              dark={true}
+              title={item.title}
+              description={item.description}
+              details={item.details}
+            />
           </div>
         );
       })}

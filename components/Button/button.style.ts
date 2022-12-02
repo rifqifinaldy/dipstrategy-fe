@@ -24,6 +24,12 @@ export const MyButton = styled.button`
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24),
       0 2px 16px 0 rgba(0, 0, 0, 0.19);
   }
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 2px;
+  }
 `;
 
 export const ButtonIcon = styled(RiArrowRightUpLine)`
@@ -32,4 +38,8 @@ export const ButtonIcon = styled(RiArrowRightUpLine)`
   display: inline;
   cursor: pointer;
   color: ${({ theme }) => theme.colors.text.darkest};
+  @media screen and (max-width: 768px) {
+    height: 20px;
+    width: 20px;
+  }
 `;

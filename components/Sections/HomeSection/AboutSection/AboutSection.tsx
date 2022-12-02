@@ -19,7 +19,12 @@ import {
 const AboutSection = () => {
   return (
     <Container fluid={true} dark={false}>
-      <AboutVideoWrapper>
+      <AboutHeaderWrapper>
+        <SectionHeading data-aos="fade-up" dark={false}>
+          ABOUT US
+        </SectionHeading>
+      </AboutHeaderWrapper>
+      <AboutVideoWrapper data-aos="fade-up">
         <iframe
           width="100%"
           height="315"
@@ -30,46 +35,45 @@ const AboutSection = () => {
           allowFullScreen
         />
       </AboutVideoWrapper>
-      <AboutHeaderWrapper>
-        <SectionHeading dark={false}>ABOUT US</SectionHeading>
-      </AboutHeaderWrapper>
       <AboutContentWrapper>
         <AboutGridItems>
           <Column1>
-            <Paragraph dark={true}>
+            <Paragraph data-aos="fade-up" dark={true}>
               Hardianto is a name of person work in digital agency based in
               jakarta. founder Novi Hardianto decided to go into business for
               himself. Using his vast experience in software engineering and
               numerous ancillary fields to help people perfect their web
               presence and get seen
             </Paragraph>
-            <Paragraph dark={true}>
+            <Paragraph data-aos="fade-up" dark={true}>
               In setting up the company. he was able to rely on his vast
               experience from previos entrepreneurial activites and therefore
               knows what matters
             </Paragraph>
-            <MyButton>
+            <MyButton data-aos="fade-up">
               See More <ButtonIcon />
             </MyButton>
           </Column1>
         </AboutGridItems>
         {/* Below are Actually the Teams Section */}
         <TeamHeaderWrapper>
-          <SectionHeading dark={true}>Our Magic Team</SectionHeading>
-          <MyButton>
+          <SectionHeading data-aos="fade-up" dark={true}>
+            Our Magic Team
+          </SectionHeading>
+          <MyButton data-aos="fade-up">
             See More <ButtonIcon />
           </MyButton>
         </TeamHeaderWrapper>
       </AboutContentWrapper>
       {/* Team Description Wrapper */}
       <TeamContentWrapper>
-        <Paragraph dark={false}>
+        <Paragraph data-aos="fade-up" dark={false}>
           Wolven D.O.O is a small digital agency based in Serbia. Founder Dave
           McGowan decided to go into business for himself, using his vast
           experience in software engineering and numerous ancillary fields to
           help people perfect their web presence and get seen
         </Paragraph>
-        <Paragraph dark={false}>
+        <Paragraph data-aos="fade-up" dark={false}>
           In setting up the company, he was able to rely on his vast experience
           from previous entrepreneurial activities and therefore know what
           matters

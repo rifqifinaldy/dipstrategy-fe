@@ -10,6 +10,10 @@ export const CardWrapper = styled.div`
   &:hover {
     transform: translateY(-7px);
   }
+  @media screen and (max-width: 540px) {
+    display: block;
+    margin-bottom: 10px;
+  }
 `;
 
 export const CardImageContainer = styled.div`

@@ -5,6 +5,13 @@ export const ValuesGridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 500px));
   grid-gap: 80px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(6, minmax(auto, 250px));
+    grid-gap: 20px;
+  }
+  @media screen and (max-width: 540px) {
+    display: block;
+  }
 `;
 
 export const ValuesItemheaders = styled.h6`
