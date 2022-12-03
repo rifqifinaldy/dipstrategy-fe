@@ -38,7 +38,7 @@ const Navbar: FC<INavbar> = ({ toggle }) => {
       <NavLogo>
         <Image
           alt="Dipstragey"
-          src="/images/Icon/dipstrategy-icon.png"
+          src="/images/navbar/dipstrategy-icon.png"
           fill={true}
           sizes="100%"
           quality={100}
