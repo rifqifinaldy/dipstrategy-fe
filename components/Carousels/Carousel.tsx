@@ -9,8 +9,7 @@ import {
   CarouselSubtitle,
   CarouselTitle,
 } from "./carousel.style";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import ArrowLink from "components/ArrowLink/ArrowLink";
 import { bannerItems } from "mockdata/banner.data";
 
@@ -21,9 +20,7 @@ const Carousel = () => {
     setImageIndex(id);
   };
 
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+
   return (
     <>
       <CarouselContainer>
